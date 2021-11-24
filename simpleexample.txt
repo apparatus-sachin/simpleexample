@@ -1,0 +1,72 @@
+
+#finduniquevowels 
+#1
+string=input("Enter string:")
+vowels=0
+for i in string:
+      if(i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U'):
+            vowels=vowels+1
+print("Number of vowels are:")
+print(vowels)
+
+#2
+vowel = ['a', 'e', 'i', 'o', 'u']
+Sentence = input("Enter a phrase: ")
+count = 0
+for letter in Sentence:
+    if letter in vowel:
+        count += 1
+print(count)
+
+
+
+#Reversestring
+#1
+def reverse(x):
+  return x[::-1]
+I= reverse("the sun arise is awesome")
+print(I)
+
+# 2nd method
+def reverse(I):
+    str=""
+    for i in s:
+        str= i+str
+    return str
+s="studenttryit"
+print("keep original :-",end="")
+print(s)
+print("the reverse one:-",end="")
+print(reverse(s))
+
+
+
+# 3rd method
+def reverse(s):
+    str = ""
+    for i in s:
+        str = i + str
+    return str
+s="sachin"
+print("the original :-",end="")
+print (s)
+print("the reverse :-",end="")
+print(reverse(s))
+
+# 4th method
+def reverse(x):
+  return x[::-1]
+I= reverse("arise")
+print(I)
+
+#occuranceofstring
+#1
+sentence="lockdown is boring as compared to other things"
+counts_dict = {}
+for c in list(sentence):
+  if c not in counts_dict:
+    counts_dict[c] = 0
+  counts_dict[c] += 1
+
+for key, value in counts_dict.items():
+    print(key, value)
